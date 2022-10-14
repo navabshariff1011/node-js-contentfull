@@ -1,7 +1,10 @@
 module.exports = {
   apps : [{
     name   : "shariff",
-    script : "npm",
-    args: "run start:dev",	  
-  }]
-}
+    script : "npm run start:dev",
+    env: {
+	    NODE_ENV: "development",
+            PORT: "5000"	    
+      },
+  }],
+};
